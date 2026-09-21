@@ -105,25 +105,15 @@
     opacity:0;animation:fadeUp 1.1s ease forwards 0.85s;
   }
   .hero .date-row{
-    display:flex;
-    flex-wrap:wrap;                 /* cho phép xuống dòng */
-    justify-content:center;         /* căn giữa khi xuống dòng */
-    align-items:center;
-    row-gap:14px;                   /* khoảng cách giữa 2 dòng */
-    column-gap:16px;
+    display:flex;align-items:center;gap:16px;
     font-family:'Cormorant Garamond',serif;
     font-size:22px;color:var(--rose-deep);margin-bottom:56px;
     opacity:0;animation:fadeUp 1.1s ease forwards 1.1s;
   }
-  .hero .date-row .date-group{
-    display:flex;align-items:center;gap:16px;
-    white-space:nowrap;             /* cụm này không bị vỡ giữa chừng */
-  }
-  .hero .date-row .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;}
-
-  @media (max-width:480px){
-    .hero .date-row{font-size:18px;column-gap:12px;}
-    .hero .date-row .date-group{gap:10px;}
+  .hero .date-row .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);}
+  .countdown{
+    display:flex;gap:30px;
+    opacity:0;animation:fadeUp 1.1s ease forwards 1.35s;
   }
   .countdown .cd-item{text-align:center;min-width:64px;}
   .countdown .cd-num{
@@ -312,8 +302,7 @@
   <h1 class="names">Tuyết Thanh <span class="amp">&amp;</span> Phước An</h1>
   <p class="tagline">Sau bao ngày tháng đồng hành, chúng mình muốn cùng bạn viết tiếp chương mới — chương của hai đứa, và có cả bạn ở đó.</p>
   <div class="date-row">
-    <span>Chủ Nhật</span><span class="dot"></span><span>04.10.2026</span><span class="dot"></span><span>Bến Tre</span>
-    <span>Thứ Hai</span><span class="dot"></span><span>05.10.2026</span><span class="dot"></span><span>Đồng Tháp</span>
+    <span>Chủ Nhật/Thứ Hai</span><span class="dot"></span><span>04/05.10.2026</span><span class="dot"></span><span>Bến Tre/Đồng Tháp</span>
   </div>
   <div class="countdown" id="countdown">
     <div class="cd-item"><div class="cd-num" id="cd-days">00</div><div class="cd-label">ngày</div></div>
